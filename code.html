@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Image Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        input, select, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        img {
+            margin-top: 20px;
+            max-width: 500px;
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Multi-Language Text to Image Generator</h2>
+
+    <input type="text" id="textInput" placeholder="Enter your text prompt">
+    <select id="languageSelect">
+        <option value="english">English</option>
+        <option value="kannada">Kannada</option>
+        <option value="tamil">Tamil</option>
+        <option value="telugu">Telugu</option>
+    </select>
+    <br>
+    <button onclick="generateImage()">Generate Image</button>
+
+    <h3>Generated Image:</h3>
+    <img id="imageDisplay" src="" alt="Your generated
